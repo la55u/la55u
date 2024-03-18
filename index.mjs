@@ -4,6 +4,8 @@ import handlebars from "handlebars";
 const accessToken = process.env.GH_ACCESS_TOKEN;
 const username = "la55u";
 
+console.log(process.env.GH_ACCESS_TOKEN.substring(0, 5));
+
 /**
  * Fetches a GitHub API URL
  * @param {string} path The URL to fetch
