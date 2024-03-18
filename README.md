@@ -1,6 +1,6 @@
 # Hi there 👋
 
-## My open-source contributions:
+## My open-source contributions 👨‍💻
 
 - Issues opened: 78
 - PRs (merged/total): 70/80
