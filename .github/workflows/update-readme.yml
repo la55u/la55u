@@ -1,8 +1,11 @@
 name: Update Readme
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 19 * * *" # Run every day at 19:00
+
+permissions: read-all
 
 jobs:
   update-readme:
