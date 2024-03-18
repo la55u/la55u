@@ -59,17 +59,25 @@ async function fetchAll() {
     const issuesOpened = issuesData.total_count;
 
     // Fetch merge requests (pull requests) opened
-    const prs = await fetchData(
-      `search/issues?q=author:${username}+type:pr&sort=created&order=asc`
+    const firstPrData = await fetchData(
+      `search/issues?q=author:${username}+type:pr&sort=created&order=asc&per_page=1`
     );
-    const pullRequestsOpened = prs.total_count;
-    const firstPullRequestDate = prs.items[0].created_at;
+    const prsOpened = firstPrData.total_count;
+    const firstPRDate = firstPrData.items[0].created_at;
+    const firstPRUrl = firstPrData.items[0].html_url;
+
+    // Most
+    const latestPrData = await fetchData(
+      `search/issues?q=author:${username}+type:pr&sort=created&order=desc&per_page=1`
+    );
+    const latestPRDate = latestPrData.items[0].created_at;
+    const latestPRUrl = latestPrData.items[0].html_url;
 
     // Fetch merge requests merged
     const mergedPRs = await fetchData(
       `search/issues?q=author:${username}+type:pr+is:merged`
     );
-    const pullRequestsMerged = mergedPRs.total_count;
+    const prsMerged = mergedPRs.total_count;
 
     // Fetch comments made on issues
     const commentsOnIssuesData = await fetchData(`search/issues?q=commenter:${username}`);
@@ -84,17 +92,20 @@ async function fetchAll() {
 
     return {
       issuesOpened,
-      pullRequestsOpened,
-      pullRequestsMerged,
+      prsOpened,
+      prsMerged,
       commentsOnIssues,
       publicRepoCount,
       totalStars,
       totalCommits,
       registeredDate: new Date(registeredDate).toISOString().substring(0, 10),
-      firstPullRequestDate: new Date(firstPullRequestDate).toISOString().substring(0, 10),
+      firstPRDate: new Date(firstPRDate).toISOString().substring(0, 10),
+      firstPRUrl,
       sponsoredAccounts: 3, // TODO
       statUpdated: new Date().toISOString().substring(0, 10),
       followers,
+      latestPRDate: new Date(latestPRDate).toISOString().substring(0, 10),
+      latestPRUrl,
     };
   } catch (error) {
     console.error("Error fetching data:", error);
