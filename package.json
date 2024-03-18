@@ -1,0 +1,14 @@
+{
+  "name": "la55u",
+  "version": "1.0.0",
+  "description": "GitHub Readme generator",
+  "main": "index.mjs",
+  "scripts": {
+    "readme": "node index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "~4.7.8"
+  }
+}
