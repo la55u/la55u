@@ -1,10 +1,10 @@
 import fs from "fs";
 import handlebars from "handlebars";
 
-const accessToken = process.env.GH_ACCESS_TOKEN;
+const accessToken = process.env.GITHUB_TOKEN;
 const username = "la55u";
 
-console.log(process.env.GH_ACCESS_TOKEN.substring(0, 5));
+console.log(process.env.GITHUB_TOKEN.substring(0, 5));
 
 /**
  * Fetches a GitHub API URL
