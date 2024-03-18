@@ -1,10 +1,10 @@
+"use strict";
+
 import fs from "fs";
 import handlebars from "handlebars";
 
 const accessToken = process.env.GITHUB_TOKEN;
 const username = "la55u";
-
-console.log(process.env.GITHUB_TOKEN.substring(0, 5));
 
 /**
  * Fetches a GitHub API URL
@@ -97,7 +97,8 @@ async function fetchAll() {
       followers,
     };
   } catch (error) {
-    console.error("Something went wrong:", error);
+    console.error("Error fetching data:", error);
+    throw new Error(error, { cause: error });
   }
 }
 
@@ -143,4 +144,4 @@ async function main() {
   }
 }
 
-main();
+await main();
