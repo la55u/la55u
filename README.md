@@ -12,4 +12,4 @@
 - First PR: 2018-06-02 https://github.com/Jackett/Jackett/pull/3193
 - Most recent PR: 2026-01-23 https://github.com/la55u/opencode/pull/3
 
-_Updated: 2026-07-18_
+_Updated: 2026-07-19_
