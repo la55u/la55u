@@ -6,10 +6,10 @@
 - PRs (merged/total): 74/86
 - Comments on issues: 113
 - Public repos: 58
-- Stars: 64
+- Stars: 65
 - Followers: 14
 - Registered: 2017-08-01
 - First PR: 2018-06-02 https://github.com/Jackett/Jackett/pull/3193
 - Most recent PR: 2026-01-23 https://github.com/la55u/opencode/pull/3
 
-_Updated: 2026-09-12_
+_Updated: 2026-09-13_
