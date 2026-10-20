@@ -3,8 +3,8 @@
 ## My open-source contributions:
 
 - Issues opened: 85
-- PRs (merged/total): 74/86
-- Comments on issues: 113
+- PRs (merged/total): 61/72
+- Comments on issues: 109
 - Public repos: 58
 - Stars: 65
 - Followers: 14
@@ -12,4 +12,4 @@
 - First PR: 2018-06-02 https://github.com/Jackett/Jackett/pull/3193
 - Most recent PR: 2026-01-23 https://github.com/la55u/opencode/pull/3
 
-_Updated: 2026-10-19_
+_Updated: 2026-10-20_
