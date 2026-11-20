@@ -12,4 +12,4 @@
 - First PR: 2018-06-02 https://github.com/Jackett/Jackett/pull/3193
 - Most recent PR: 2026-11-14 https://github.com/convex/mcp/pull/12
 
-_Updated: 2026-11-19_
+_Updated: 2026-11-20_
