@@ -6,10 +6,10 @@
 - PRs (merged/total): 63/79
 - Comments on issues: 111
 - Public repos: 59
-- Stars: 65
+- Stars: 66
 - Followers: 14
 - Registered: 2017-08-01
 - First PR: 2018-06-02 https://github.com/Jackett/Jackett/pull/3193
 - Most recent PR: 2026-11-14 https://github.com/convex/mcp/pull/12
 
-_Updated: 2026-11-23_
+_Updated: 2026-11-24_
